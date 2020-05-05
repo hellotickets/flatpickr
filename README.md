@@ -48,6 +48,6 @@ See also:
 
 flatpickr will never change its license, pester users for donations, or engage in other user-hostile behavior.
 
-Nevertheless, if you enjoyed working with this library or if its made your life easier, you can buy a cup of coffee for flatpickr author :)
+Nevertheless, if you enjoyed working with this library or if its made your life easier, you can buy a cup of coffee for flatpickr author
 
 <a href='https://ko-fi.com/A3381DJ9' target='_blank'>Buy a cup of Coffee for flatpickr author</a>
