@@ -1,9 +1,5 @@
-## flatpickr - javascript datetime picker
-[![Build Status](https://circleci.com/gh/flatpickr/flatpickr/tree/master.svg?style=shield)](https://circleci.com/gh/flatpickr/flatpickr/tree/master)
+## Hellotickets flatpickr - javascript datetime picker
 
-[![Coverage](https://coveralls.io/repos/github/chmln/flatpickr/badge.svg?branch=master)](https://coveralls.io/github/chmln/flatpickr)
-[![npm version](https://badge.fury.io/js/flatpickr.svg)](https://www.npmjs.com/package/flatpickr)
-[![CDNJS](https://img.shields.io/cdnjs/v/flatpickr.svg)](https://cdnjs.com/libraries/flatpickr)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/flatpickr/flatpickr/master/LICENSE.md)
 
 
@@ -46,19 +42,12 @@ IE9 and up, Edge, iOS Safari 6+, Chrome 8+, Firefox 6+
 Demos and documentation: https://flatpickr.js.org
 
 See also:
-* [angular2+-flatpickr addon](https://github.com/mezoistvan/ng2-flatpickr)
-* [angularJS-flatpickr addon](https://www.npmjs.com/package/angular-flatpickr)
-* [ember-flatpickr addon](https://www.npmjs.com/package/ember-flatpickr)
-* [Preact Component](https://github.com/molnarmark/preact-flatpickr)
-* [React Component](https://github.com/coderhaoxin/react-flatpickr)
-* [Stimulus.js Controller](https://github.com/adrienpoly/stimulus-flatpickr)
-* [Svelte Component](https://github.com/jacobmischka/svelte-flatpickr)
-* [vue-flatpickr component](https://github.com/ankurk91/vue-flatpickr-component)
+* [hellotickets/vue-flatpickr component](https://github.com/hellotickets/vue-flatpickr-component)
 
 ## Supporting flatpickr
 
 flatpickr will never change its license, pester users for donations, or engage in other user-hostile behavior.
 
-Nevertheless, if you enjoyed working with this library or if its made your life easier, you can buy me a cup of coffee :)
+Nevertheless, if you enjoyed working with this library or if its made your life easier, you can buy a cup of coffee for author :)
 
 <a href='https://ko-fi.com/A3381DJ9' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
