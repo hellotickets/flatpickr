@@ -479,7 +479,7 @@ function FlatpickrInstance(
         );
       }
     }
-    
+
     if (self.config.allowInput)
       bind(self._input, "blur", onBlur);
   }
@@ -1594,10 +1594,10 @@ function FlatpickrInstance(
       );
     return false;
   }
-    
+
   function onBlur(e: FocusEvent) {
     var isInput = e.target === self._input;
-    
+
     if (isInput) {
       self.setDate(self._input.value, true, e.target === self.altInput
                    ? self.config.altFormat
@@ -1845,10 +1845,14 @@ function FlatpickrInstance(
               : "endRange"
           );
 
-          if (initialDate < hoverDate && timestamp === initialDate)
+          if (initialDate < hoverDate && timestamp === initialDate) {
             dayElem.classList.add("startRange");
-          else if (initialDate > hoverDate && timestamp === initialDate)
+            (self.daysContainer as HTMLElement).classList.remove("singleRange");
+          } else if (initialDate > hoverDate && timestamp === initialDate) {
             dayElem.classList.add("endRange");
+            (self.daysContainer as HTMLElement).classList.remove("singleRange");
+          } else if (initialDate === hoverDate && timestamp === initialDate)
+            (self.daysContainer as HTMLElement).classList.add("singleRange");
           if (
             timestamp >= minRange &&
             (maxRange === 0 || timestamp <= maxRange) &&
