@@ -45,6 +45,7 @@ See also:
 * [hellotickets/vue-flatpickr component](https://github.com/hellotickets/vue-flatpickr-component)
 
 ## Supporting flatpickr
+Based on https://github.com/flatpickr/flatpickr
 
 flatpickr will never change its license, pester users for donations, or engage in other user-hostile behavior.
 
