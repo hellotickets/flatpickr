@@ -22,8 +22,9 @@ $font-color = rgba(48, 50, 93, 0.7)
   font-weight normal
   font-size 16px
 
-  .cur-month
-    font-weight: normal
+  span.cur-month
+    font-weight: normal !important
+    margin: 0
 
     &:hover
       background none !important
@@ -225,3 +226,8 @@ $font-color = rgba(48, 50, 93, 0.7)
     &:hover
       opacity 1
 
+.flatpickr-disabled:hover
+  opacity 1
+
+  &:after
+    content none
