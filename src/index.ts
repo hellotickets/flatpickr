@@ -1889,6 +1889,10 @@ function FlatpickrInstance(
     e?: FocusEvent | MouseEvent,
     positionElement = self._positionElement
   ) {
+    if (self.selectedDates.length === 2) {
+      (self.daysContainer as HTMLElement).classList.remove("singleRange");
+    }
+
     if (self.isMobile === true) {
       if (e) {
         e.preventDefault();
@@ -1908,10 +1912,6 @@ function FlatpickrInstance(
     if (self._input.disabled || self.config.inline) return;
 
     const wasOpen = self.isOpen;
-
-    if (self.selectedDates.length === 2) {
-      (self.daysContainer as HTMLElement).classList.remove("singleRange");
-    }
 
     self.isOpen = true;
 
