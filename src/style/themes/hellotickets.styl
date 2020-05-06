@@ -1,0 +1,225 @@
+$main-color = #6a7ae6
+$second-color = #C3CAF5
+$font-color = rgba(48, 50, 93, 0.7)
+
+.flatpickr-calendar
+  color $font-color
+  font-family 'ApercuPro', sans-serif
+
+.singleRange .startRange:before
+  content none !important
+
+.flatpickr-month
+  height 56px
+  line-height: 20px
+
+.flatpickr-current-month
+  padding 16 0
+  line-height: 20px;
+  text-align center
+  font-weight normal
+  font-size 16px
+
+  .cur-month
+    font-weight: normal
+
+    &:hover
+      background none !important
+
+.numInputWrapper
+  display none !important
+
+.flatpickr-weekday
+  font-family 'ApercuPro', sans-serif
+  font-style normal
+  font-weight 500
+  font-size 14px
+  line-height 17px
+  color #303838
+
+.flatpickr-next-month
+  height 33px
+  position absolute
+  top 5px
+  width 33px
+  border-radius 4px
+  right 11px
+  background-size 6px
+  fill $main-color
+
+  &:hover svg
+    fill $main-color
+
+.flatpickr-prev-month
+  height 33px
+  position absolute
+  top 5px
+  width 33px
+  border-radius 4px
+  left 11px
+  background-size 6px
+  fill $main-color
+
+  &:hover svg
+    fill $main-color
+
+.flatpickr-innerContainer
+  color $font-color
+  font-family 'Apercu Pro', sans-serif
+
+.dayContainer
+  padding-bottom 16px
+  width 100%
+  max-width 100%
+  display flex
+  flex-direction row
+  align-items flex-start
+
+.prevMonthDay
+  visibility hidden
+
+.nextMonthDay
+  height 1px !important
+  visibility hidden
+
+.flatpickr-weekday
+  width 10px
+  font-size 14px
+  font-weight normal
+.flatpickr-days
+  width 100%
+
+.flatpickr-day
+  margin 0 0 1px !important
+  padding 0
+  font-weight normal
+  color rgba(48, 50, 93, 0.7)
+  font-size 14px
+  box-sizing border-box
+  height 32px
+  line-height 32px
+  border-radius 0
+  bordr 1px solid red !important
+  max-width initial
+
+  &.disabled
+    opacity 0.4
+
+    &:hover
+      color $font-color
+      cursor default
+      background none
+
+  &:hover
+    position relative
+    border none
+    background none
+    opacity 0.3
+    color #fff
+
+    &:after
+      content ''
+      position absolute
+      left 0
+      right 0
+      margin-left auto
+      margin-right auto
+      height 32px
+      width 32px
+      border-radius 50%
+      background-color $main-color
+      z-index -1
+
+
+  &.today
+    border none
+    background none !important
+
+  &.selected
+    background $main-color
+    border none
+    border-radius none
+    color #fff
+
+  &.inRange
+    background $second-color
+    border none
+    color #fff
+    box-shadow none
+
+    &:hover
+      border none
+      opacity 0.7
+      color #fff
+      background-color $second-color
+
+      &:after
+        content none
+
+  &.startRange
+    color #ffffff
+    background none !important
+    border none !important
+    border-radius none !important
+    box-shadow unset !important
+
+    &:after
+      content ''
+      position absolute
+      left 0
+      right 0
+      margin-left auto
+      margin-right auto
+      height 32px
+      width 32px
+      border-radius 50%
+      background-color $main-color
+      z-index -1
+
+    &:before
+      content ''
+      position absolute
+      width 50%
+      height 100%
+      background-color $second-color
+      display block
+      z-index -1
+      right 0
+      box-shadow none
+
+    &:hover
+      opacity 1
+      box-shadow unset
+
+  &.endRange
+    color #ffffff
+    background none !important
+    border none !important
+    border-radius none !important
+    box-shadow unset !important
+
+    &:after
+      content ''
+      position absolute
+      left 0
+      right 0
+      margin-left auto
+      margin-right auto
+      height 32px
+      width 32px
+      border-radius 50%
+      background-color $main-color
+      z-index -1
+
+    &:before
+      content ''
+      position absolute
+      width 50%
+      height 100%
+      background-color $second-color
+      display block
+      z-index -1
+
+    &:hover
+      opacity 1
+

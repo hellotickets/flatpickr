@@ -1,7 +1,7 @@
 {
-  "name": "flatpickr",
-  "version": "4.6.4",
-  "description": "A lightweight, powerful javascript datetime picker",
+  "name": "@hellotickets/flatpickr",
+  "version": "1.0.1",
+  "description": "Hellotickets Datepicker based on flatpickr",
   "scripts": {
     "build": "run-s build:pre build:build build:types build:post",
     "build:pre": "rimraf dist",
@@ -58,28 +58,16 @@
   "main": "dist/flatpickr.js",
   "style": "dist/flatpickr.css",
   "types": "./dist/typings.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chmln/flatpickr.git"
-  },
-  "author": "Gregory <gregory.mkv@gmail.com>",
+  "author": "hellotickets <development@hellotickets.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chmln/flatpickr/issues"
-  },
-  "homepage": "https://chmln.github.io/flatpickr",
-  "keywords": [
-    "javascript",
-    "datetimepicker",
-    "calendar",
-    "date",
-    "time",
-    "picker",
-    "lightweight"
-  ],
   "browserslist": [
     "ie >= 9",
     "last 2 versions",
     "safari >= 7"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:hellotickets/flatpickr.git"
+  },
+  "dependencies": {}
 }
