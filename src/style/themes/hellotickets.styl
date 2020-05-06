@@ -11,26 +11,32 @@ $font-color = rgba(48, 50, 93, 0.7)
 .singleRange .startRange:before
   content none !important
 
-.flatpickr-month
+.flatpickr-months .flatpickr-month
   height 56px
   line-height: 20px
 
 .flatpickr-current-month
-  padding 16 0
-  line-height: 20px;
+  display flex
+  align-items center
+  justify-content center
+  padding 0
+  margin 0
   text-align center
   font-weight normal
   font-size 16px
+  height 56px
 
   span.cur-month
-    font-weight: normal !important
+    font-weight: normal
     margin: 0
+    color rgba(48, 50, 93, 0.7)
+    font-size 16px
 
     &:hover
-      background none !important
+      background none
 
-.numInputWrapper
-  display none !important
+.flatpickr-current-month .numInputWrapper
+  display none
 
 .flatpickr-weekday
   font-family 'ApercuPro', sans-serif
@@ -40,31 +46,31 @@ $font-color = rgba(48, 50, 93, 0.7)
   line-height 17px
   color #303838
 
-.flatpickr-next-month
-  height 33px
-  position absolute
-  top 5px
-  width 33px
-  border-radius 4px
-  right 11px
-  background-size 6px
+.flatpickr-months .flatpickr-next-month.flatpickr-next-month
+  height 56px
+  width 37px
+  display flex
+  align-items center
+  justify-content center
+  padding 0
+  margin 0
   fill $main-color
 
   &:hover svg
-    fill $main-color
+    fill $second-color
 
-.flatpickr-prev-month
-  height 33px
-  position absolute
-  top 5px
-  width 33px
-  border-radius 4px
-  left 11px
-  background-size 6px
+.flatpickr-months .flatpickr-prev-month
+  height 56px
+  width 37px
+  display flex
+  align-items center
+  justify-content center
+  padding 0
+  margin 0
   fill $main-color
 
   &:hover svg
-    fill $main-color
+    fill $second-color
 
 .flatpickr-innerContainer
   color $font-color
@@ -85,10 +91,12 @@ $font-color = rgba(48, 50, 93, 0.7)
   height 1px !important
   visibility hidden
 
-.flatpickr-weekday
-  width 10px
+span.flatpickr-weekday
+  font-weight 500
   font-size 14px
-  font-weight normal
+  line-height 17px
+  color #303838
+
 .flatpickr-days
   width 100%
 

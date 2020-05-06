@@ -379,7 +379,7 @@ export const defaults: ParsedOptions = {
   mode: "single",
   monthSelectorType: "dropdown",
   nextArrow:
-    "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17 17'><g></g><path d='M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z' /></svg>",
+    "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 9 16'><g></g><path d='M8.21097 7.74225C8.21397 8.04385 8.11658 8.33483 7.93967 8.55257L2.33138 15.1539C2.08522 15.4471 1.72519 15.563 1.3869 15.4581C1.04861 15.3532 0.783463 15.0433 0.691332 14.6452C0.599202 14.2471 0.694087 13.8212 0.940245 13.5281L5.86171 7.74225L0.940245 1.95644C0.590493 1.50177 0.60483 0.803242 0.972824 0.369074C1.34082 -0.065093 1.93288 -0.0820084 2.31826 0.330636L7.93967 6.93193C8.11658 7.14967 8.21397 7.44065 8.21097 7.74225Z' /></svg>",
   noCalendar: false,
   now: new Date(),
   onChange: [],
@@ -398,7 +398,7 @@ export const defaults: ParsedOptions = {
   position: "auto",
   positionElement: undefined,
   prevArrow:
-    "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17 17'><g></g><path d='M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z' /></svg>",
+    "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 9 16'><g></g><path d='M0.78904 8.25775C0.786033 7.95615 0.883427 7.66517 1.06034 7.44743L6.66862 0.846136C6.91478 0.552947 7.27481 0.436969 7.6131 0.541888C7.95139 0.646807 8.21654 0.956684 8.30867 1.35479C8.4008 1.7529 8.30591 2.17875 8.05976 2.47194L3.13829 8.25775L8.05976 14.0436C8.40951 14.4982 8.39517 15.1968 8.02718 15.6309C7.65918 16.0651 7.06712 16.082 6.68175 15.6694L1.06034 9.06807C0.883427 8.85033 0.786033 8.55935 0.78904 8.25775Z' /></svg>",
   shorthandCurrentMonth: false,
   showMonths: 1,
   static: false,
