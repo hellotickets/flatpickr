@@ -1851,8 +1851,9 @@ function FlatpickrInstance(
           } else if (initialDate > hoverDate && timestamp === initialDate) {
             dayElem.classList.add("endRange");
             (self.daysContainer as HTMLElement).classList.remove("singleRange");
-          } else if (initialDate === hoverDate && timestamp === initialDate)
+          } else if (timestamp === initialDate && initialDate === hoverDate) {
             (self.daysContainer as HTMLElement).classList.add("singleRange");
+          }
           if (
             timestamp >= minRange &&
             (maxRange === 0 || timestamp <= maxRange) &&
@@ -1907,6 +1908,10 @@ function FlatpickrInstance(
     if (self._input.disabled || self.config.inline) return;
 
     const wasOpen = self.isOpen;
+
+    if (self.selectedDates.length === 2) {
+      (self.daysContainer as HTMLElement).classList.remove("singleRange");
+    }
 
     self.isOpen = true;
 
