@@ -1,6 +1,6 @@
 {
   "name": "@hellotickets/flatpickr",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Hellotickets Datepicker based on flatpickr",
   "scripts": {
     "build": "run-s build:pre build:build build:types build:post",
