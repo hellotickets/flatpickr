@@ -1851,7 +1851,7 @@ function FlatpickrInstance(
           } else if (initialDate > hoverDate && timestamp === initialDate) {
             dayElem.classList.add("endRange");
             (self.daysContainer as HTMLElement).classList.remove("singleRange");
-          } else if (timestamp === initialDate && initialDate === hoverDate) {
+          } else if (timestamp === initialDate && initialDate === hoverDate && self.selectedDates.length < 2) {
             (self.daysContainer as HTMLElement).classList.add("singleRange");
           }
           if (
@@ -1889,10 +1889,6 @@ function FlatpickrInstance(
     e?: FocusEvent | MouseEvent,
     positionElement = self._positionElement
   ) {
-    if (self.selectedDates.length === 2) {
-      (self.daysContainer as HTMLElement).classList.remove("singleRange");
-    }
-
     if (self.isMobile === true) {
       if (e) {
         e.preventDefault();
@@ -2709,6 +2705,19 @@ function FlatpickrInstance(
       // many front-end frameworks bind to the input event
       self.input.dispatchEvent(createEvent("input"));
     }
+
+    if (event === "onOpen") {
+      self.selectedDates.length === 1
+      ||
+      (
+        self.selectedDates.length === 2
+        && self.selectedDates[0].getDate() === self.selectedDates[1].getDate()
+      )
+        ? (self.daysContainer as HTMLElement).classList
+          .add("singleRange")
+        : (self.daysContainer as HTMLElement).classList
+          .remove("singleRange");
+    }
   }
 
   function createEvent(name: string): Event {
@@ -2791,6 +2800,14 @@ function FlatpickrInstance(
    * Updates the values of inputs associated with the calendar
    */
   function updateValue(triggerChange = true) {
+    self.selectedDates.length === 1
+    || (
+      self.selectedDates.length === 2
+      && self.selectedDates[0].getDate() === self.selectedDates[1].getDate()
+    )
+      ? (self.daysContainer as HTMLElement).classList.add("singleRange")
+      : (self.daysContainer as HTMLElement).classList.remove("singleRange")
+
     if (self.mobileInput !== undefined && self.mobileFormatStr) {
       self.mobileInput.value =
         self.latestSelectedDateObj !== undefined

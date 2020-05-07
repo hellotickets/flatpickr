@@ -147,14 +147,27 @@ span.flatpickr-weekday
     background none !important
 
   &.selected
-    background $main-color
+    background none !important
     border none
     border-radius none
     color #fff
 
+    &:after
+      content ''
+      position absolute
+      left 0
+      right 0
+      margin-left auto
+      margin-right auto
+      height 32px
+      width 32px
+      border-radius 50%
+      background-color $main-color
+      z-index -1
+
   &.inRange
     background $second-color
-    border none
+    border 1px solid $second-color
     color #fff
     box-shadow none
 

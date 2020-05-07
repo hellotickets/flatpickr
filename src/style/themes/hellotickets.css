@@ -862,14 +862,27 @@ span.flatpickr-weekday {
   background: none !important;
 }
 .flatpickr-day.selected {
-  background: #6a7ae6;
+  background: none !important;
   border: none;
   border-radius: none;
   color: #fff;
 }
+.flatpickr-day.selected:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #6a7ae6;
+  z-index: -1;
+}
 .flatpickr-day.inRange {
   background: #c3caf5;
-  border: none;
+  border: 1px solid #c3caf5;
   color: #fff;
   box-shadow: none;
 }
