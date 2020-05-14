@@ -1,6 +1,23 @@
 $main-color = #6a7ae6
-$second-color = #C3CAF5
+$second-color = #5d7adc
 $font-color = rgba(48, 50, 93, 0.7)
+$font-color-inactive = rgba(48, 50, 93, 0.56)
+$in-range-bg = #eef2fc
+$in-range-bg-hover = #f7faff
+
+.selected-round-bg
+  &:after
+    content ''
+    position absolute
+    left 0
+    right 0
+    margin-left auto
+    margin-right auto
+    height 32px
+    width 32px
+    border-radius 50%
+    background-color $main-color
+    z-index -1
 
 @require "../flatpickr"
 
@@ -110,7 +127,7 @@ span.flatpickr-weekday
   height 32px
   line-height 32px
   border-radius 0
-  bordr 1px solid red !important
+  border none
   max-width initial
 
   &.disabled
@@ -128,19 +145,7 @@ span.flatpickr-weekday
     opacity 0.3
     color #fff
 
-    &:after
-      content ''
-      position absolute
-      left 0
-      right 0
-      margin-left auto
-      margin-right auto
-      height 32px
-      width 32px
-      border-radius 50%
-      background-color $main-color
-      z-index -1
-
+    @extend .selected-round-bg
 
   &.today
     border none
@@ -152,30 +157,17 @@ span.flatpickr-weekday
     border-radius none
     color #fff
 
-    &:after
-      content ''
-      position absolute
-      left 0
-      right 0
-      margin-left auto
-      margin-right auto
-      height 32px
-      width 32px
-      border-radius 50%
-      background-color $main-color
-      z-index -1
+    @extend .selected-round-bg
 
   &.inRange
-    background $second-color
-    border 1px solid $second-color
-    color #fff
+    background $in-range-bg
+    border none !important
     box-shadow none
 
     &:hover
-      border none
-      opacity 0.7
-      color #fff
-      background-color $second-color
+      background $in-range-bg-hover
+      opacity 1
+      color $font-color
 
       &:after
         content none
@@ -187,25 +179,14 @@ span.flatpickr-weekday
     border-radius none !important
     box-shadow unset !important
 
-    &:after
-      content ''
-      position absolute
-      left 0
-      right 0
-      margin-left auto
-      margin-right auto
-      height 32px
-      width 32px
-      border-radius 50%
-      background-color $main-color
-      z-index -1
+    @extend .selected-round-bg
 
     &:before
       content ''
       position absolute
       width 50%
       height 100%
-      background-color $second-color
+      background-color $in-range-bg
       display block
       z-index -1
       right 0
@@ -222,33 +203,26 @@ span.flatpickr-weekday
     border-radius none !important
     box-shadow unset !important
 
-    &:after
-      content ''
-      position absolute
-      left 0
-      right 0
-      margin-left auto
-      margin-right auto
-      height 32px
-      width 32px
-      border-radius 50%
-      background-color $main-color
-      z-index -1
+    @extend .selected-round-bg
 
     &:before
       content ''
       position absolute
       width 50%
       height 100%
-      background-color $second-color
+      background-color $in-range-bg
       display block
       z-index -1
 
     &:hover
       opacity 1
 
-.flatpickr-disabled:hover
-  opacity 1
+.flatpickr-disabled
+  color $font-color-inactive !important
+  opacity .2 !important
 
-  &:after
-    content none
+  &:hover
+    opacity .2
+
+    &:after
+      content none
