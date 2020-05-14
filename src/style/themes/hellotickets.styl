@@ -5,20 +5,6 @@ $font-color-inactive = rgba(48, 50, 93, 0.56)
 $in-range-bg = #eef2fc
 $in-range-bg-hover = #f7faff
 
-.selected-round-bg
-  &:after
-    content ''
-    position absolute
-    left 0
-    right 0
-    margin-left auto
-    margin-right auto
-    height 32px
-    width 32px
-    border-radius 50%
-    background-color $main-color
-    z-index -1
-
 @require "../flatpickr"
 
 .flatpickr-calendar
@@ -145,7 +131,18 @@ span.flatpickr-weekday
     opacity 0.3
     color #fff
 
-    @extend .selected-round-bg
+    &:after
+      content ''
+      position absolute
+      left 0
+      right 0
+      margin-left auto
+      margin-right auto
+      height 32px
+      width 32px
+      border-radius 50%
+      background-color $main-color
+      z-index -1
 
   &.today
     border none
@@ -157,7 +154,18 @@ span.flatpickr-weekday
     border-radius none
     color #fff
 
-    @extend .selected-round-bg
+    &:after
+      content ''
+      position absolute
+      left 0
+      right 0
+      margin-left auto
+      margin-right auto
+      height 32px
+      width 32px
+      border-radius 50%
+      background-color $main-color
+      z-index -1
 
   &.inRange
     background $in-range-bg
@@ -179,7 +187,18 @@ span.flatpickr-weekday
     border-radius none !important
     box-shadow unset !important
 
-    @extend .selected-round-bg
+    &:after
+      content ''
+      position absolute
+      left 0
+      right 0
+      margin-left auto
+      margin-right auto
+      height 32px
+      width 32px
+      border-radius 50%
+      background-color $main-color
+      z-index -1
 
     &:before
       content ''
@@ -203,7 +222,18 @@ span.flatpickr-weekday
     border-radius none !important
     box-shadow unset !important
 
-    @extend .selected-round-bg
+    &:after
+      content ''
+      position absolute
+      left 0
+      right 0
+      margin-left auto
+      margin-right auto
+      height 32px
+      width 32px
+      border-radius 50%
+      background-color $main-color
+      z-index -1
 
     &:before
       content ''
