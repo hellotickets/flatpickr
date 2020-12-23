@@ -67,6 +67,23 @@ export function createNumberInput(
   return wrapper;
 }
 
+export function createYearInput() {
+  const wrapper = createElement<HTMLDivElement>("div", "numYearWrapper"),
+      numInput = createElement<HTMLInputElement>(
+          "input",
+          "cur-year"
+      )
+
+  numInput.type = "text";
+  numInput.pattern = "\\d*";
+  numInput.tabIndex = -1;
+  numInput.readOnly = true;
+  numInput.disabled = true;
+
+  wrapper.appendChild(numInput);
+  return wrapper;
+}
+
 export function getEventTarget(event: Event): EventTarget | null {
   if (typeof event.composedPath === "function") {
     const path = event.composedPath();

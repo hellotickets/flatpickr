@@ -30,8 +30,8 @@ $in-range-bg-hover = #f7faff
   height 56px
 
   span.cur-month
-    font-weight: normal
-    margin: 0
+    font-weight normal
+    margin 0
     color rgba(48, 50, 93, 0.7)
     font-size 16px
 
@@ -39,7 +39,18 @@ $in-range-bg-hover = #f7faff
       background none
 
 .flatpickr-current-month .numInputWrapper
-  display none
+  //display none
+
+.flatpickr-current-month .numYearWrapper
+  display inline
+
+.flatpickr-current-month .numYearWrapper .cur-year
+  display inline-block
+  width 40px
+  font-weight normal
+  margin 0
+  color rgba(48,50,93,0.7)
+  font-size 16px
 
 .flatpickr-weekday
   font-family 'ApercuPro', sans-serif
@@ -47,7 +58,7 @@ $in-range-bg-hover = #f7faff
   font-weight 500
   font-size 14px
   line-height 17px
-  color #303838
+  color #484F4F !important
 
 .flatpickr-months .flatpickr-next-month.flatpickr-next-month
   height 56px
@@ -93,12 +104,6 @@ $in-range-bg-hover = #f7faff
 .nextMonthDay
   height 1px !important
   visibility hidden
-
-span.flatpickr-weekday
-  font-weight 500
-  font-size 14px
-  line-height 17px
-  color #303838
 
 .flatpickr-days
   width 100%
