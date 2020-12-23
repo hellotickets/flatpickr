@@ -35,8 +35,11 @@ Demos and documentation: https://flatpickr.js.org
 git commit
 git push origin master
 npm login
-npm version *.*.* # where *.*.* is next version
+# *.*.* is next version of package
+npm version *.*.* 
 npm publish
+# copy hellotickets.css into ht-web project
+cp github.com/hellotickets/vue-flatpickr-component/src/style/themes/hellotickets.css bitbucket.org/helloticketscode/ht-web/src/plugins/datepicker/themes/hellotickets.css
 ```
 
 ## Supporting flatpickr
