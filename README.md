@@ -30,14 +30,14 @@ IE9 and up, Edge, iOS Safari 6+, Chrome 8+, Firefox 6+
 
 Demos and documentation: https://flatpickr.js.org
 
-See also:
-* [hellotickets/vue-flatpickr component](https://github.com/hellotickets/vue-flatpickr-component)
+## Publish
+```bash
+git commit
+git push origin master
+npm login
+npm version *.*.* # where *.*.* is next version
+npm publish
+```
 
 ## Supporting flatpickr
 Based on https://github.com/flatpickr/flatpickr
-
-flatpickr will never change its license, pester users for donations, or engage in other user-hostile behavior.
-
-Nevertheless, if you enjoyed working with this library or if its made your life easier, you can buy a cup of coffee for flatpickr author
-
-<a href='https://ko-fi.com/A3381DJ9' target='_blank'>Buy a cup of Coffee for flatpickr author</a>
